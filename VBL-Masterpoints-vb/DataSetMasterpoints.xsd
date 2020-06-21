@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetMasterpoints" targetNamespace="http://tempuri.org/DataSetMasterpoints.xsd" xmlns:mstns="http://tempuri.org/DataSetMasterpoints.xsd" xmlns="http://tempuri.org/DataSetMasterpoints.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetMasterpoints" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetMasterpoints" msprop:Generator_UserDSName="DataSetMasterpoints">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblMasterpoints" msprop:Generator_TableClassName="tblMasterpointsDataTable" msprop:Generator_TableVarName="tabletblMasterpoints" msprop:Generator_TablePropName="tblMasterpoints" msprop:Generator_RowDeletingName="tblMasterpointsRowDeleting" msprop:Generator_RowChangingName="tblMasterpointsRowChanging" msprop:Generator_RowEvHandlerName="tblMasterpointsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblMasterpointsRowDeleted" msprop:Generator_UserTableName="tblMasterpoints" msprop:Generator_RowChangedName="tblMasterpointsRowChanged" msprop:Generator_RowEvArgName="tblMasterpointsRowChangeEvent" msprop:Generator_RowClassName="tblMasterpointsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="colRank" msdata:ReadOnly="true" msdata:Caption="Rangschikking" msprop:Generator_ColumnVarNameInTable="columncolRank" msprop:Generator_ColumnPropNameInRow="colRank" msprop:Generator_ColumnPropNameInTable="colRankColumn" msprop:Generator_UserColumnName="colRank" type="xs:short" minOccurs="0" />
+              <xs:element name="colVBL1" msdata:ReadOnly="true" msdata:Caption="VBL 1" msprop:Generator_ColumnVarNameInTable="columncolVBL1" msprop:Generator_ColumnPropNameInRow="colVBL1" msprop:Generator_ColumnPropNameInTable="colVBL1Column" msprop:Generator_UserColumnName="colVBL1" type="xs:string" />
+              <xs:element name="colVBL2" msdata:ReadOnly="true" msdata:Caption="VBL 2" msprop:Generator_ColumnVarNameInTable="columncolVBL2" msprop:Generator_ColumnPropNameInRow="colVBL2" msprop:Generator_ColumnPropNameInTable="colVBL2Column" msprop:Generator_UserColumnName="colVBL2" type="xs:string" minOccurs="0" />
+              <xs:element name="colName1" msdata:ReadOnly="true" msdata:Caption="Naam 1" msprop:Generator_ColumnVarNameInTable="columncolName1" msprop:Generator_ColumnPropNameInRow="colName1" msprop:Generator_ColumnPropNameInTable="colName1Column" msprop:Generator_UserColumnName="colName1" type="xs:string" />
+              <xs:element name="colName2" msdata:ReadOnly="true" msdata:Caption="Naam 2" msprop:Generator_ColumnVarNameInTable="columncolName2" msprop:Generator_ColumnPropNameInRow="colName2" msprop:Generator_ColumnPropNameInTable="colName2Column" msprop:Generator_UserColumnName="colName2" type="xs:string" minOccurs="0" />
+              <xs:element name="colPoints" msdata:Caption="Masterpoints" msprop:Generator_ColumnVarNameInTable="columncolPoints" msprop:Generator_ColumnPropNameInRow="colPoints" msprop:Generator_ColumnPropNameInTable="colPointsColumn" msprop:Generator_UserColumnName="colPoints" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblTotals" msprop:Generator_TableClassName="tblTotalsDataTable" msprop:Generator_TableVarName="tabletblTotals" msprop:Generator_RowChangedName="tblTotalsRowChanged" msprop:Generator_TablePropName="tblTotals" msprop:Generator_RowDeletingName="tblTotalsRowDeleting" msprop:Generator_RowChangingName="tblTotalsRowChanging" msprop:Generator_RowEvHandlerName="tblTotalsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblTotalsRowDeleted" msprop:Generator_RowClassName="tblTotalsRow" msprop:Generator_UserTableName="tblTotals" msprop:Generator_RowEvArgName="tblTotalsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="colVBL" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncolVBL" msprop:Generator_ColumnPropNameInRow="colVBL" msprop:Generator_ColumnPropNameInTable="colVBLColumn" msprop:Generator_UserColumnName="colVBL" type="xs:string" />
+              <xs:element name="colPoints" msprop:Generator_ColumnVarNameInTable="columncolPoints" msprop:Generator_ColumnPropNameInRow="colPoints" msprop:Generator_ColumnPropNameInTable="colPointsColumn" msprop:Generator_UserColumnName="colPoints" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="tblTotalsKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblTotals" />
+      <xs:field xpath="mstns:colVBL" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
